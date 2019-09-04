@@ -14,11 +14,14 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      padding: 0 calculateRem(256px);
+      padding: 0 calculateRem(16px);
       color: $secondary--color;
       height: 4rem;
       background: $primary--color;
 
+      .nav {
+        margin: auto;
+      }
       .mat-raised-button {
         color: $primary--color;
         margin-right: 1rem;
@@ -37,20 +40,25 @@
       .home-link {
         color: white;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: calculateRem(24px);
+        font-family: Georgia, 'Times New Roman', Times, serif;
       }
 
       .btc-link {
         padding-left: 1rem;
         color: white;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: calculateRem(13px);
       }
 
       .btc-pro-link {
         color: white;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: calculateRem(13px);
+      }
+
+      button {
+        font-size: calculateRem(13px);
       }
 
       .icon__arrow-drop-down--white {
@@ -103,19 +111,6 @@
     }
   }
 }
-@media (max-width: 1640px) {
-  :host(app-header) {
-    padding-bottom: 0;
-    header {
-      position: relative;
-
-      nav {
-        display: flex;
-        padding: 0 2rem 0 ;
-      }
-    }
-  }
-}
 @media (max-width: 807px) {
   #today {
     width: 50%;
@@ -137,7 +132,7 @@
       nav {
         height: 7rem;
         display: flex;
-        padding: 1rem 2rem 0;
+        padding: 1rem 1rem 0;
 
         > div {
           margin-top: 1rem;

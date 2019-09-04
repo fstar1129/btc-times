@@ -1,6 +1,7 @@
 <header>
   <nav>
-    <div fxFlex fxLayout="row" fxLayoutAlign="center center">
+    <div fxFlex="0 1 1140px" fxLayout="row" fxLayoutAlign="center center" class="nav">
+
       <div fxFlex="none">
         <a class="home-link" routerLink="/">
           BTC TIMES
@@ -13,12 +14,12 @@
           <a class="btc-pro-link" routerLink="/">
             +4.72%
           </a>
-          <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-md>
+          <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
             <mat-icon>menu</mat-icon>
           </button>
       </div>
       
-      <div fxFlex class="text--right" fxShow="false" fxShow.gt-md>
+      <div fxFlex class="text--right" fxShow="false" fxShow.gt-sm>
         <button aria-label="news" mat-flat-button [matMenuTriggerFor]="matmenu">
           News<mat-icon class="icon__arrow-drop-down--white">arrow_drop_down</mat-icon>
         </button>

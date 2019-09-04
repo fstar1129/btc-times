@@ -1,0 +1,23 @@
+@import '../../styles/mixins';
+
+.mini-view-item {
+    
+    h3.mini-view-item__title {
+        font-size: 1.625rem;
+        font-family: "Times New Roman", Times, serif;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    p.mini-view-item__headline {
+        font-size: calculateRem(15px);
+        margin-bottom: 20px;
+        line-height: calculateRem(24px);       
+    }
+    p.mini-view-item__author {
+        font-size: calculateRem(13px);
+        margin-bottom: 20px;
+    }
+}
+.mini-view-item:not(:first-child) {
+    border-top: 1px solid #ececec;
+}

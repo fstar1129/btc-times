@@ -1,3 +1,42 @@
 mat-card-title, mat-card-subtitle, .mat-card-image {
   cursor: pointer;
 }
+.main-page{
+  margin: auto;
+}
+.main-board {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 20px;
+}
+app-featured-mini-view-item:not(:first-child){
+  border-top: 1px solid #ececec;
+  padding-top: 20px;
+}
+.mini-view {
+  height: 450px;
+  overflow-y: scroll;
+}
+.mini-view::-webkit-scrollbar {
+  width: 5px;
+  height: 13px;
+}
+
+/* Track */
+.mini-view::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 3px grey; 
+  border-radius: 4px; */
+  background: white;
+  border-radius: 9px;
+}
+
+/* Handle */
+.mini-view::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 9px;
+  width: 30px;
+}
+
+/* Handle on hover */
+.mini-view::-webkit-scrollbar-thumb:hover {
+  background: #979698; 
+}

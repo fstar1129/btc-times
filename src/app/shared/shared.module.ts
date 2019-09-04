@@ -15,6 +15,10 @@ import {NgxScrollToFirstInvalidModule} from '@ismaestro/ngx-scroll-to-first-inva
 import {LoadingPlaceholderComponent} from './components/loading-placeholder/loading-placeholder.component';
 import {CapitalizeFirstPipe} from './pipes/capitalize-first.pipe';
 import {LazyLoadImageModule} from 'ng-lazyload-image';
+import { FeaturedCardComponent } from './components/featured-card/featured-card.component';
+import { AdsComponent } from './components/ads/ads.component';
+import { FeaturedMiniViewItemComponent } from './components/featured-mini-view-item/featured-mini-view-item.component';
+import { MainNewsletterComponent } from './components/main-newsletter/main-newsletter.component';
 
 @NgModule({
   imports: [
@@ -35,7 +39,11 @@ import {LazyLoadImageModule} from 'ng-lazyload-image';
     HeroCardComponent,
     HeroLoadingComponent,
     LoadingPlaceholderComponent,
-    CapitalizeFirstPipe
+    CapitalizeFirstPipe,
+    FeaturedCardComponent,
+    AdsComponent,
+    FeaturedMiniViewItemComponent,
+    MainNewsletterComponent
   ],
   exports: [
     CommonModule,
@@ -51,7 +59,12 @@ import {LazyLoadImageModule} from 'ng-lazyload-image';
     NgxScrollToFirstInvalidModule,
     LoadingPlaceholderComponent,
     CapitalizeFirstPipe,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    FeaturedCardComponent,
+    AdsComponent,
+    FeaturedCardComponent,
+    FeaturedMiniViewItemComponent,
+    MainNewsletterComponent
   ]
 })
 

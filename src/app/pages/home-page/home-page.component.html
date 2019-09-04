@@ -1,15 +1,38 @@
-<div fxLayout="row">
-  <div fxFlex="10" fxFlex.gt-sm="20"></div>
-  <div fxFlex="90" fxFlex.gt-sm="80">
-    <h1 class="header__title" i18n="@@topHeroes">Heroes most liked</h1>
-    <div id="heroes-list" *ngIf="heroes$ | async as heroes; else loading">
-      <ng-container *ngFor="let hero of heroes">
-        <app-hero-card [hero]="hero"></app-hero-card>
-      </ng-container>
+<div fxLayout="column" fxFlex="0 1 1140px"  class="main-page" fxLayoutGap="20px">
+  <div fxLayout="row" fxLayoutGap="25px" class="main-board">
+    <div fxFlex="66" fxLayout="column" fxLayoutGap="15px">
+      <!-- <h1 class="header__title" i18n="@@topHeroes">Heroes most liked</h1>
+      <div id="heroes-list" *ngIf="heroes$ | async as heroes; else loading">
+        <ng-container *ngFor="let hero of heroes">
+          <app-hero-card [hero]="hero"></app-hero-card>
+        </ng-container>
+      </div>
+      <ng-template #loading>
+        <app-hero-loading></app-hero-loading>
+      </ng-template> -->
+      <app-featured-card [card]="featuredCard"></app-featured-card>
+      <app-ads [ads]="ads"></app-ads>
     </div>
-    <ng-template #loading>
-      <app-hero-loading></app-hero-loading>
-    </ng-template>
+    <div fxFlex="33" fxLayout="column" class="mini-view">
+      <app-featured-mini-view-item></app-featured-mini-view-item>
+      <app-featured-mini-view-item></app-featured-mini-view-item>
+      <app-featured-mini-view-item></app-featured-mini-view-item>
+      <app-featured-mini-view-item></app-featured-mini-view-item>
+      <app-featured-mini-view-item></app-featured-mini-view-item>
+      <app-featured-mini-view-item></app-featured-mini-view-item>
+    </div>
   </div>
-  <div fxFlex="10" fxFlex.gt-sm="20"></div>
+  <app-main-newsletter></app-main-newsletter>
 </div>
+  
+<!-- <div class="feature-island">
+  <div class="feature-island-main-block">
+    <a class="post-block__title__link">
+      
+    </a>
+  </div>
+  <div class="mini-view">
+  </div>
+</div>
+<div class="clear"></div> -->
+  
