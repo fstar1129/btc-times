@@ -1,4 +1,5 @@
 @import "../../styles/mixins";
+@import "../../styles/fonts";
 
 footer {
   padding: calculateRem(48px) calculateRem(16px);
@@ -22,7 +23,7 @@ footer {
       color: white;
       text-decoration: none;
       font-size: calculateRem(34px);
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: $primary--font;
       }
   }
 

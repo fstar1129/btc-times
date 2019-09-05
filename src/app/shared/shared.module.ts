@@ -19,6 +19,10 @@ import { FeaturedCardComponent } from './components/featured-card/featured-card.
 import { AdsComponent } from './components/ads/ads.component';
 import { FeaturedMiniViewItemComponent } from './components/featured-mini-view-item/featured-mini-view-item.component';
 import { MainNewsletterComponent } from './components/main-newsletter/main-newsletter.component';
+import { LatestPostComponent } from './components/latest-post/latest-post.component';
+import { PostCardComponent } from './components/post-card/post-card.component';
+import { StoryTipsComponent } from './components/story-tips/story-tips.component';
+import { PressReleasesComponent } from './components/press-releases/press-releases.component';
 
 @NgModule({
   imports: [
@@ -43,7 +47,11 @@ import { MainNewsletterComponent } from './components/main-newsletter/main-newsl
     FeaturedCardComponent,
     AdsComponent,
     FeaturedMiniViewItemComponent,
-    MainNewsletterComponent
+    MainNewsletterComponent,
+    LatestPostComponent,
+    PostCardComponent,
+    StoryTipsComponent,
+    PressReleasesComponent
   ],
   exports: [
     CommonModule,
@@ -64,7 +72,11 @@ import { MainNewsletterComponent } from './components/main-newsletter/main-newsl
     AdsComponent,
     FeaturedCardComponent,
     FeaturedMiniViewItemComponent,
-    MainNewsletterComponent
+    MainNewsletterComponent,
+    LatestPostComponent,
+    PostCardComponent,
+    StoryTipsComponent,
+    PressReleasesComponent
   ]
 })
 

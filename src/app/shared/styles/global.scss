@@ -1,5 +1,9 @@
-@import "mixins";
+@import 'mixins';
+@import '~@angular/material/theming';
+@import 'fonts';
 
+$custom-typography: mat-typography-config($font-family: $secondary--font);
+@include mat-core($custom-typography);
 * {
   @include font-roboto();
 }

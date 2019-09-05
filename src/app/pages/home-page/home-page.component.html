@@ -1,4 +1,4 @@
-<div fxLayout="column" fxFlex="0 1 1140px"  class="main-page" fxLayoutGap="20px">
+<div fxLayout="column" fxFlex="0 1 1140px"  class="main-page" fxLayoutGap="20px" fxLayoutAlign="center center">
   <div fxLayout="row" fxLayoutGap="25px" class="main-board">
     <div fxFlex="66" fxLayout="column" fxLayoutGap="15px">
       <!-- <h1 class="header__title" i18n="@@topHeroes">Heroes most liked</h1>
@@ -23,16 +23,16 @@
     </div>
   </div>
   <app-main-newsletter></app-main-newsletter>
-</div>
-  
-<!-- <div class="feature-island">
-  <div class="feature-island-main-block">
-    <a class="post-block__title__link">
-      
-    </a>
+  <div fxLayout="row" fxLayoutGap="30px">
+    <div fxFlex="70">
+      <app-latest-post></app-latest-post>
+    </div>
+    <div fxFlex="30" fxLayoutGap="60px" fxLayout="column">
+      <app-story-tips></app-story-tips>
+      <app-press-releases></app-press-releases>
+      <app-ads [ads]="sideAds"></app-ads>
+    </div>
   </div>
-  <div class="mini-view">
-  </div>
+  <button mat-stroked-button class="btn--w250">SHOW LESS</button>
 </div>
-<div class="clear"></div> -->
   
