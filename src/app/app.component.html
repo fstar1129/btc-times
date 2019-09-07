@@ -1,7 +1,7 @@
 <div>
   <app-header></app-header>
   <router-outlet *ngIf="isOnline;else isOffline"></router-outlet>
-  <app-related-news *ngIf="isPostPage" style="background-color: black"></app-related-news>
+  <app-related-news *ngIf="isPostPage"></app-related-news>
   <ng-template #isOffline>
     <div>
       <p class="offline-error" i18n="@@offlineMessage">Without connection we can not load anything!</p>
