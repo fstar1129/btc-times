@@ -21,6 +21,7 @@ import {ENDPOINTS_CONFIG, EndpointsConfig} from './configs/endpoints.config';
 import {LazyLoadImageModule} from 'ng-lazyload-image';
 import {RouterModule} from '@angular/router';
 import {PrebootModule} from 'preboot';
+import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 
 declare const require;
 
@@ -66,7 +67,8 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
   declarations: [
     HomePageComponent,
     Error404PageComponent,
-    AppComponent
+    AppComponent,
+    BlogPageComponent
   ],
   providers: [
     {provide: APP_CONFIG, useValue: AppConfig},

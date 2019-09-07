@@ -1,16 +1,16 @@
 @import "../../styles/fonts";
 
 hr {
-    border: 1px solid #fed265;
+    border: 1px solid black;
+    text-transform: uppercase;
 }
 
 h1 {
     font-family: $primary--font;
     font-size: 20px;
     text-transform: uppercase;
-    margin: 10px 0 20px 0;
+    margin: 0 0 20px 0;
     font-weight: 600;
-    color: #fed265;
 }
 
 .press-releases-section {
@@ -25,6 +25,5 @@ h1 {
     .press-more {
         padding-top: 14px;
         text-align: right;
-        color: #fed265;
     }
 }

@@ -1,0 +1,21 @@
+@import "../../styles/fonts";
+:host(app-related-news) {
+
+    background-color: #f0f0f0;
+    .related-news {
+        margin: 40px auto;
+    }
+        
+    hr {
+        border: 1px solid black;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-family: $primary--font;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+        font-weight: 600;
+    }
+}

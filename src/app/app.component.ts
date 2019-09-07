@@ -3,7 +3,7 @@ import {Meta, Title} from '@angular/platform-browser';
 import {NavigationEnd, Router} from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {UtilsHelperService} from './shared/services/utils-helper.service';
-import {DOCUMENT, isPlatformBrowser} from '@angular/common';
+import {DOCUMENT, isPlatformBrowser, Location} from '@angular/common';
 import {I18n} from '@ngx-translate/i18n-polyfill';
 import {RoutesConfig} from './configs/routes.config';
 
@@ -11,17 +11,19 @@ declare const Modernizr;
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent implements OnInit {
 
   isOnline: boolean;
-
+  isPostPage: boolean = false;
   constructor(private title: Title,
               private meta: Meta,
               private snackBar: MatSnackBar,
               private router: Router,
+              private location: Location,
               private i18n: I18n,
               private renderer: Renderer2,
               @Inject(DOCUMENT) doc: Document,
@@ -33,6 +35,11 @@ export class AppComponent implements OnInit {
     } else {
       this.isOnline = true;
     }
+
+    if (this.location.path() === "/blog") {
+      this.isPostPage = true;
+    }
+
   }
 
   ngOnInit() {

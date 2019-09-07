@@ -1,0 +1,20 @@
+<div fxLayout="row" fxFlex="0 1 1140px" class="blog-page" 
+    fxLayoutGap="30px" fxLayoutAlign="center">
+    <div fxFlex="70">
+        <app-news></app-news>
+    </div>
+    <div fxFlex="30" fxLayoutGap="40px" fxLayout="column">
+        <div>
+            <app-top-stories></app-top-stories>
+        </div>
+        <div>
+            <app-top-categories></app-top-categories>
+        </div>
+        <div>
+            <app-side-submission></app-side-submission>
+        </div>
+        <div>
+            <app-ads [ads]="sideAds"></app-ads>
+        </div>
+    </div>
+</div>

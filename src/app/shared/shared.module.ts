@@ -23,6 +23,12 @@ import { LatestPostComponent } from './components/latest-post/latest-post.compon
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { StoryTipsComponent } from './components/story-tips/story-tips.component';
 import { PressReleasesComponent } from './components/press-releases/press-releases.component';
+import { NewsComponent } from './components/news/news.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { TopStoriesComponent } from './components/top-stories/top-stories.component';
+import { TopCategoriesComponent } from './components/top-categories/top-categories.component';
+import { SideSubmissionComponent } from './components/side-submission/side-submission.component';
+import { RelatedNewsComponent } from './components/related-news/related-news.component';
 
 @NgModule({
   imports: [
@@ -51,7 +57,13 @@ import { PressReleasesComponent } from './components/press-releases/press-releas
     LatestPostComponent,
     PostCardComponent,
     StoryTipsComponent,
-    PressReleasesComponent
+    PressReleasesComponent,
+    NewsComponent,
+    CategoriesComponent,
+    TopStoriesComponent,
+    TopCategoriesComponent,
+    SideSubmissionComponent,
+    RelatedNewsComponent
   ],
   exports: [
     CommonModule,
@@ -76,7 +88,13 @@ import { PressReleasesComponent } from './components/press-releases/press-releas
     LatestPostComponent,
     PostCardComponent,
     StoryTipsComponent,
-    PressReleasesComponent
+    PressReleasesComponent,
+    NewsComponent,
+    CategoriesComponent,
+    TopStoriesComponent,
+    TopCategoriesComponent,
+    SideSubmissionComponent,
+    RelatedNewsComponent
   ]
 })
 

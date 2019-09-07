@@ -8,6 +8,7 @@ const basePaths = {
 
 const routesNames = {
   home: '',
+  blog: 'blog',
   error404: '404',
   heroes: {
     basePath: basePaths.heroes
@@ -18,6 +19,7 @@ export const RoutesConfig: any = {
   routesNames,
   routes: {
     home: `/${routesNames.home}`,
+    blog: `/${routesNames.blog}`,
     error404: `/${routesNames.error404}`,
     heroes: {
       detail: getHeroDetail
