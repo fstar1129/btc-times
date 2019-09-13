@@ -5,7 +5,6 @@ import {AppComponent} from './app.component';
 import {APP_CONFIG, AppConfig} from './configs/app.config';
 import {SharedModule} from './shared/shared.module';
 import {NgxExampleLibraryModule} from '@ismaestro/ngx-example-library';
-import {FirebaseModule} from './shared/modules/firebase.module';
 import {SentryErrorHandler} from './modules/core/sentry.errorhandler';
 import {BrowserModule, ɵgetDOM} from '@angular/platform-browser';
 import {I18n} from '@ngx-translate/i18n-polyfill';
@@ -14,6 +13,7 @@ import {DOCUMENT, isPlatformBrowser, registerLocaleData} from '@angular/common';
 import localeEs from '@angular/common/locales/es';
 import {CookieModule} from 'ngx-cookie';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import {ROUTES_CONFIG, RoutesConfig} from './configs/routes.config';
 import {HomePageComponent} from './pages/home-page/home-page.component';
 import {Error404PageComponent} from './pages/error404-page/error404-page.component';
@@ -54,7 +54,6 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
     AppRoutingModule,
     BrowserAnimationsModule,
     CookieModule.forRoot(),
-    FirebaseModule,
     NgxExampleLibraryModule.forRoot({
       config: {
         say: 'hello'
