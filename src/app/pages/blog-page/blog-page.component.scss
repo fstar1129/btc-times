@@ -1,18 +1,25 @@
 @import "../../shared/styles/fonts";
 
-.blog-page {
-    margin: 0 auto 110px auto;
-    width: 1140px;
-    flex-shrink: 1;
-}
+:host(app-blog-page) {
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
 
-hr {
-    border: 1px solid black;
-}
-
-h1 {
-    font-family: $primary--font;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
+    .blog-page {
+        margin: 0 auto 110px auto;
+        width: 1140px;
+        flex-shrink: 1;
+        max-height: 100% !important;
+    }
+    
+    hr {
+        border: 1px solid black;
+    }
+    
+    h1 {
+        font-family: $primary--font;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
 }

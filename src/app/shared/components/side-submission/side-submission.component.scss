@@ -1,9 +1,10 @@
 @import "../../styles/fonts";
+@import "../../styles/colors";
 
 .side-submit {
     padding: 40px 0;
-    border-bottom: 1px solid #ececec;
-    border-top: 1px solid #ececec;
+    border-bottom: 1px solid $light-grey;
+    border-top: 1px solid $light-grey;
     h1 {
         font-family: $primary--font;
         font-size: 26px;
@@ -17,7 +18,7 @@
 
     .side__sbumit__btn {
         width: 100%;
-        background-color: #f4ca65;
+        background-color: $orange;
         font-size: 16px;
     }
 }

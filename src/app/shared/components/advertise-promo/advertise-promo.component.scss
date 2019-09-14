@@ -1,0 +1,45 @@
+@import '../../styles/mixins';
+@import '../../styles/fonts';
+
+.advertise-promo {
+
+    padding: 0 30px 30px 0;
+    border-right: 1px solid $light-grey;
+    margin-bottom: 40px;
+
+    .post-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .mini-view-item {
+    
+        h3.mini-view-item__title {
+            font-size: 1.625rem;
+            font-family: $primary--font;
+            letter-spacing: 1px;
+            margin: 0 0 20px 0;
+        }
+        p.mini-view-item__headline {
+            font-size: calculateRem(15px);
+            margin-bottom: 20px;
+            line-height: calculateRem(24px);       
+        }
+    }
+
+    .advertise-media-kit__metrics {
+        padding: 10px 0;
+
+        .advertise-media-kit__metrics-item-title {
+            font-size: 40px;
+            font-family: $primary--font;
+            margin-bottom: 30px;
+        }
+
+        .advertise-media-kit__metrics-item-subtitle {
+            font-size: 15px;
+        }
+    }
+}
+

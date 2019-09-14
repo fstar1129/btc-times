@@ -22,6 +22,8 @@ import {LazyLoadImageModule} from 'ng-lazyload-image';
 import {RouterModule} from '@angular/router';
 import {PrebootModule} from 'preboot';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { AdvertisePageComponent } from './pages/advertise-page/advertise-page.component';
+import { PressReleasesPageComponent } from './pages/press-releases-page/press-releases-page.component';
 
 declare const require;
 
@@ -67,7 +69,9 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
     HomePageComponent,
     Error404PageComponent,
     AppComponent,
-    BlogPageComponent
+    BlogPageComponent,
+    AdvertisePageComponent,
+    PressReleasesPageComponent
   ],
   providers: [
     {provide: APP_CONFIG, useValue: AppConfig},

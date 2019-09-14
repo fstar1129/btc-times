@@ -1,5 +1,7 @@
 @import '../../../shared/styles/mixins';
 @import '../../../shared/styles/fonts';
+@import '../../../shared/styles/colors';
+
 .img--w100 {
     width: 100%;
     height: auto;
@@ -56,7 +58,7 @@ p.news__content {
 }
 
 hr {
-    border: 1px solid #ececec;
+    border: 1px solid $light-grey;
     width: 100%;
 }
 .img__avatar {
@@ -88,7 +90,7 @@ hr {
 
 .comment__word {
     padding: 20px;
-    border-left: 1px solid #ececec;
+    border-left: 1px solid $light-grey;
     line-height: calculateRem(20px);
     font-size: 13px;
 }

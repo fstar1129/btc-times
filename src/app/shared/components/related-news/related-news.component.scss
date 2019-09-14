@@ -1,7 +1,9 @@
 @import "../../styles/fonts";
+@import "../../styles/colors";
+
 :host(app-related-news) {
 
-    background-color: #f0f0f0;
+    background-color: $grey;
     .related-news {
         margin: 40px auto;
     }

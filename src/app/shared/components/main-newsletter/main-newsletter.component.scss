@@ -1,10 +1,11 @@
 @import "../../styles/fonts";
+@import "../../styles/colors";
 
 .main-newsletter {
     height: 190px;
     background-image: url("/assets/images/or-tri.png");
     background-repeat: no-repeat;
-    background-color: #f0f0f0;
+    background-color: $grey;
     padding: 0 40px;
     h1 {
         font-size: 50px;

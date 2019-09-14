@@ -32,11 +32,6 @@ h1, h2 {
   @include push--auto(2rem);
 }
 
-.icon__like--red {
-  color: $red;
-  cursor: pointer;
-}
-
 .icon__like--grey {
   color: $grey;
   cursor: pointer;

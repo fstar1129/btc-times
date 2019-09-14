@@ -27,6 +27,14 @@ import { TopStoriesComponent } from './components/top-stories/top-stories.compon
 import { TopCategoriesComponent } from './components/top-categories/top-categories.component';
 import { SideSubmissionComponent } from './components/side-submission/side-submission.component';
 import { RelatedNewsComponent } from './components/related-news/related-news.component';
+import { AdvertisePromoComponent } from './components/advertise-promo/advertise-promo.component';
+import { AdvertisePromoFormComponent } from './components/advertise-promo-form/advertise-promo-form.component';
+import { AdvertiseAdsComponent } from './components/advertise-ads/advertise-ads.component';
+import { AdvertiseAdsItemComponent } from './components/advertise-ads-item/advertise-ads-item.component';
+import { AdvertiseAdvantageComponent } from './components/advertise-advantage/advertise-advantage.component';
+import { AdvertiseAdvantageItemComponent } from './components/advertise-advantage-item/advertise-advantage-item.component';
+import { AdvertiseFormatsComponent } from './components/advertise-formats/advertise-formats.component';
+import { AdvertiseFormatsItemComponent } from './components/advertise-formats-item/advertise-formats-item.component';
 
 @NgModule({
   imports: [
@@ -59,7 +67,15 @@ import { RelatedNewsComponent } from './components/related-news/related-news.com
     TopStoriesComponent,
     TopCategoriesComponent,
     SideSubmissionComponent,
-    RelatedNewsComponent
+    RelatedNewsComponent,
+    AdvertisePromoComponent,
+    AdvertisePromoFormComponent,
+    AdvertiseAdsComponent,
+    AdvertiseAdsItemComponent,
+    AdvertiseAdvantageComponent,
+    AdvertiseAdvantageItemComponent,
+    AdvertiseFormatsComponent,
+    AdvertiseFormatsItemComponent
   ],
   exports: [
     CommonModule,
@@ -88,7 +104,14 @@ import { RelatedNewsComponent } from './components/related-news/related-news.com
     TopStoriesComponent,
     TopCategoriesComponent,
     SideSubmissionComponent,
-    RelatedNewsComponent
+    RelatedNewsComponent,
+    AdvertisePromoComponent,
+    AdvertisePromoFormComponent,
+    AdvertiseAdsComponent,
+    AdvertiseAdsItemComponent,
+    AdvertiseAdvantageComponent,
+    AdvertiseFormatsComponent,
+    AdvertiseFormatsItemComponent
   ]
 })
 

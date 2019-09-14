@@ -1,14 +1,17 @@
+@import "../../shared/styles/colors";
+
 mat-card-title, mat-card-subtitle, .mat-card-image {
   cursor: pointer;
 }
+
 .main-page{
   margin: 0 auto 40px auto;
   .main-board {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $light-grey;
     padding-bottom: 20px;
   }
   app-featured-mini-view-item:not(:first-child){
-    border-top: 1px solid #ececec;
+    border-top: 1px solid $light-grey;
     padding-top: 20px;
   }
   .mini-view {
@@ -24,7 +27,7 @@ mat-card-title, mat-card-subtitle, .mat-card-image {
   .mini-view::-webkit-scrollbar-track {
     /* box-shadow: inset 0 0 3px grey; 
     border-radius: 4px; */
-    background: white;
+    background: $white;
     border-radius: 9px;
   }
   
