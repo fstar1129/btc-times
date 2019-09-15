@@ -4,6 +4,11 @@ import {CoreModule} from './modules/core/core.module';
 import {AppComponent} from './app.component';
 import {APP_CONFIG, AppConfig} from './configs/app.config';
 import {SharedModule} from './shared/shared.module';
+import {HomePageModule} from './pages/home-page/home-page.module';
+import {BlogPageModule} from './pages/blog-page/blog-page.module';
+import {AdvertisePageModule} from './pages/advertise-page/advertise-page.module';
+import {PressReleasesPageModule} from './pages/press-releases-page/press-releases-page.module';
+
 import {NgxExampleLibraryModule} from '@ismaestro/ngx-example-library';
 import {SentryErrorHandler} from './modules/core/sentry.errorhandler';
 import {BrowserModule, ɵgetDOM} from '@angular/platform-browser';
@@ -64,6 +69,10 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
     LazyLoadImageModule.forRoot({}),
     CoreModule,
     SharedModule,
+    HomePageModule,
+    BlogPageModule,
+    AdvertisePageModule,
+    PressReleasesPageModule,
   ],
   declarations: [
     HomePageComponent,

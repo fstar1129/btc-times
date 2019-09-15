@@ -1,0 +1,29 @@
+@import "../../../shared/styles/fonts";
+@import "../../../shared/styles/colors";
+
+:host(app-advertise-ads-item) {
+    .advertise-ads-item {
+        background-color: $white;
+        padding: 40px 30px;
+        margin: 20px;
+
+        h1 {
+            font-size: 26px;
+            font-family: $primary--font;
+            margin-top: 10px;
+        }
+    
+        p {
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 40px !important;
+            line-height: 25px;
+        }
+    
+        button {
+            font-size: 16px;
+            background-color: $orange;
+            width: 60%;
+        }
+    }
+}

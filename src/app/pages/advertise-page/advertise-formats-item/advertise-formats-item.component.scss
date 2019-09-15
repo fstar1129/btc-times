@@ -1,0 +1,19 @@
+@import "../../../shared/styles/fonts";
+
+:host(app-advertise-formats-item) {
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 26px;
+        font-family: $primary--font;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

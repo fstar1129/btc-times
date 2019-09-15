@@ -1,0 +1,15 @@
+@import "../../../shared/styles/fonts";
+@import "../../../shared/styles/colors";
+
+:host(app-press-release-plan) {
+    margin: 20px;
+    padding: 20px;
+
+    p span {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    img {
+    }
+}

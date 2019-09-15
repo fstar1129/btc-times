@@ -1,0 +1,21 @@
+@import "../../shared/styles/fonts";
+@import "../../shared/styles/colors";
+
+:host(app-press-releases-page) {
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+
+    .press-release__title {
+        background-color: $orange;
+
+        h1 {
+            font-size: 40px;
+            font-family: $primary--font;
+            margin: 10px auto 17px auto;
+            font-weight: 600;
+        }
+
+    }
+    
+}

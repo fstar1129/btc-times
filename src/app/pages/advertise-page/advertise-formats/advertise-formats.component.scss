@@ -1,0 +1,11 @@
+@import "../../../shared/styles/colors";
+
+:host(app-advertise-formats) {
+
+    .advertise-formats {
+        margin: auto;
+        padding: 60px 0;
+    }
+    
+    border-bottom: 1px solid $light-grey;
+}

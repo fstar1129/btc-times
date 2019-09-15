@@ -1,0 +1,17 @@
+@import "../../../shared/styles/fonts";
+@import "../../../shared/styles/colors";
+
+:host(app-press-release-plan-selection) {
+    margin: 40px auto 40px auto;
+
+    h2 {
+        margin-bottom: 40px;
+        font-size: 34px;
+        font-family: $primary--font;
+        font-weight: 600;
+    }
+
+    .plan-selection {
+        width: 1140px;
+    }
+}

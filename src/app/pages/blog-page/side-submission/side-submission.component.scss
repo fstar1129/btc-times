@@ -1,0 +1,24 @@
+@import "../../../shared/styles/fonts";
+@import "../../../shared/styles/colors";
+
+.side-submit {
+    padding: 40px 0;
+    border-bottom: 1px solid $light-grey;
+    border-top: 1px solid $light-grey;
+    h1 {
+        font-family: $primary--font;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .side__mat__form--width {
+        width: 100%;
+    }
+
+    .side__sbumit__btn {
+        width: 100%;
+        background-color: $orange;
+        font-size: 16px;
+    }
+}
