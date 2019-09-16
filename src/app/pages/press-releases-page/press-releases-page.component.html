@@ -2,3 +2,70 @@
     <h1>Submit a press release</h1>
 </div>
 <app-press-release-plan-selection></app-press-release-plan-selection>
+<div class="press-release__company_info">
+    <div fxLayout="column" fxLayoutAlign="center center" class="company-info__section">
+        <h2>&#9313;&nbsp;&nbsp;Company info</h2>
+        <div fxLayout="column" fxLayoutGap="30px" class="company-info__form">
+            <div>
+                <p>Full name</p>
+                <input type="text" placeholder="Your Name">
+            </div>
+            <div>
+                <p>Company name</p>
+                <input type="text" placeholder="Company name">
+            </div>
+            <div>
+                <p>Company website</p>
+                <input type="text" placeholder="www.example.com">
+            </div>
+            <div>
+                <p>Contact email</p>
+                <input type="text" placeholder="example@email.com">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="press-release__company_info">
+    <div fxLayout="column" fxLayoutAlign="center center" class="company-info__section">
+        <h2>&#9314;&nbsp;&nbsp;Press release content</h2>
+        <div fxLayout="column" fxLayoutGap="30px"  class="company-info__form">
+            <div>
+                <p>Title</p>
+                <input type="text" placeholder="Your Title">
+            </div>
+            <div>
+                <p>Content</p>
+                <textarea placeholder="Press release" rows="18"></textarea>
+            </div>
+            <div>
+                <p>Attachments</p>
+                <input type="file" id="upload_attachment" #fileSelect (change)="onFileChange($event)">
+                <div fxLayout="row" fxLayoutAlign="space-between center" class="upload_attachment">
+                    <p>
+                        <span id="uploaded_images">{{ fileName === '' ? 'Upload logo and ad images (svg/png/jpg, max 3mb)' : fileName}}</span>
+                    </p>
+                    <button mat-flat-button (click)="fileSelect.click()">Choose file</button>
+                </div>
+            </div>
+            <div>
+                <p>Publication time(BST, London time)</p>
+                <mat-radio-group class="pub-time__radio_group">
+                    <mat-radio-button class="pub-time__radio_btn" value="1" checked>Within 24 hours</mat-radio-button>
+                    <mat-radio-button class="pub-time__radio_btn" value="2">Choose date and time <i class="fa fa-calendar" aria-hidden="true"></i></mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </div>
+        <button mat-flat-button class="press-release__payment_btn">Go to the payment</button>
+        <div fxLayout="column" fxLayoutAlign="center" class="press-release-support">
+            <h3>Support</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                <br /><br />
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            </p>
+            <div fxLayoutAlign="center">
+                <button mat-flat-button>Contact</button>
+            </div>
+        </div>
+    </div>
+</div>

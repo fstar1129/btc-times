@@ -2,14 +2,14 @@
     <h2>&#9312;&nbsp;&nbsp;Select a plan</h2>
     <div fxLayout="row" fxLayoutAlign="center center" class="plan-selection">
         <div fxFlex="33">
-            <app-press-release-plan [type]="basic"></app-press-release-plan>
+            <app-press-release-plan [type]="'basic'"></app-press-release-plan>
         </div>
         <div fxFlex="33">
-            <app-press-release-plan [type]="pro"></app-press-release-plan>
+            <app-press-release-plan [type]="'pro'"></app-press-release-plan>
         </div>
         <div fxFlex="33">
-            <app-press-release-plan [type]="vip"></app-press-release-plan>
+            <app-press-release-plan [type]="'vip'"></app-press-release-plan>
         </div>
     </div>
-    
+    <button mat-flat-button class="press-release__more_option__btn">More options</button>
 </div>

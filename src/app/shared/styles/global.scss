@@ -7,7 +7,13 @@ $custom-typography: mat-typography-config($font-family: $secondary--font);
 * {
   @include font-roboto();
 }
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: black !important;
+}
 
+::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color:black !important;
+}
 a, .cp {
   cursor: pointer;
 }

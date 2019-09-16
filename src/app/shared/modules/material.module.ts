@@ -5,6 +5,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
@@ -26,6 +27,7 @@ import {NgModule} from '@angular/core';
     MatProgressBarModule,
     MatAutocompleteModule,
     MatInputModule,
+    MatRadioModule,
     MatGridListModule,
     MatSnackBarModule,
     MatProgressSpinnerModule,
@@ -43,6 +45,7 @@ import {NgModule} from '@angular/core';
     MatProgressBarModule,
     MatAutocompleteModule,
     MatInputModule,
+    MatRadioModule,
     MatGridListModule,
     MatSnackBarModule,
     MatProgressSpinnerModule,

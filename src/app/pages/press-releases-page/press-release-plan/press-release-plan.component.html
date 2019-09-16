@@ -1,7 +1,45 @@
-<div fxLayout="column" fxLayoutAlign="center center">
-    <p><span *ngIf="type === 'pro'">recommended</span></p>
-    <img src="/assets/images/advertise-buy-icon.png" />
-    <h1>Basic Press Release</h1>
-    <button mat-flat-button class="side__sbumit__btn">0.4 BTC</button>
-
+<div [class]="type === 'pro' ? 'pro-plan' : 'non-pro-plan'">
+    <div fxLayout="column" fxLayoutAlign="center center" class="buy-plan">
+        <p *ngIf="type === 'pro'; else notRecommended">recommended</p>
+        <ng-template #notRecommended>
+            <p>&nbsp;</p>
+        </ng-template>
+        <img src="/assets/images/advertise-buy-icon.png" />
+        <h1 *ngIf="type === 'basic'; else h1Pro">Basic Press Release</h1>
+        <ng-template #h1Pro>
+            <h1 *ngIf="type === 'pro'; else h1Vip">Pro Press Release</h1>
+        </ng-template>
+        <ng-template #h1Vip>
+            <h1>Vip Press Release</h1>
+        </ng-template>
+    
+        <button *ngIf="type === 'basic'; else btnPro" mat-flat-button class="basic-buy__btn">0.4 BTC</button>
+        <ng-template #btnPro>
+            <button *ngIf="type === 'pro'; else btnVip" mat-flat-button class="pro-buy__btn">0.8 BTC</button>
+        </ng-template>
+        <ng-template #btnVip>
+            <button mat-flat-button class="vip-buy__btn">1.2 BTC</button>
+        </ng-template>
+    </div>
+    <div fxLayout="column" fxLayoutGap="20px" class="plan-privilege">
+        <p>Includes:</p>
+        <div *ngIf="type === 'basic'; else pro_privilege" class="plan-privilege__content">
+            <p><i class="fa fa-check"></i>&nbsp;&nbsp;Article featured on the main site (Enlgish only)</p>
+        </div>
+        <ng-template #pro_privilege>
+            <div *ngIf="type === 'pro'; else vip_privilege" class="plan-privilege__content">
+                <p><i class="fa fa-check"></i>&nbsp;&nbsp;Article featured on the main site</p>
+                <p><i class="fa fa-check"></i>&nbsp;&nbsp;Localised (ES, IT, JP, PT, BR)</p>
+                <p><i class="fa fa-check"></i>&nbsp;&nbsp;Logo featured</p>
+            </div>
+        </ng-template>
+        <ng-template #vip_privilege>
+            <div class="plan-privilege__content">
+                <p><i class="fa fa-check"></i>&nbsp;&nbsp;Article featured on the main site</p>
+                <p><i class="fa fa-check"></i>&nbsp;&nbsp;Localised (ES, IT, JP, PT, BR)</p>
+                <p><i class="fa fa-check"></i>&nbsp;&nbsp;Logo featured</p>
+                <p><i class="fa fa-check"></i>&nbsp;&nbsp;One ad space</p>
+            </div>
+        </ng-template>
+    </div>
 </div>

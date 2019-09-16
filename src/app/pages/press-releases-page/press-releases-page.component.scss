@@ -1,6 +1,14 @@
 @import "../../shared/styles/fonts";
 @import "../../shared/styles/colors";
 
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+    background-color: $black;
+}
+
+::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color:$black;
+}
+
 :host(app-press-releases-page) {
     flex-direction: column;
     box-sizing: border-box;
@@ -17,5 +25,153 @@
         }
 
     }
+    .press-release__title:after,
+    .press-release__title:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+
+
+    /* this border color controlls the color of the triangle (what looks like the fill of the triangle) */
+    .press-release__title:after {
+        top: 10px;
+        border-color: transparent transparent transparent #fdd;
+        border-width: 10px;
+    }
+
+    /* this border color controlls the outside, thin border */
+    .press-release__title:before {
+        top: 9px;
+        border-color: transparent transparent transparent #a00;
+        border-width: 11px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 34px;
+        font-family: $primary--font;
+        font-weight: 600;
+    }
+    .press-release__company_info {
+        border-bottom: 1px solid $light-grey;
+
+        .company-info__section {
+            width: 600px;
+            margin: auto;
+            padding: 40px 0;
     
+            .company-info__form {
+                padding: 20px 0;
+                width: 100%;
+
+                p {
+                    font-size: 14px;
+                }
+            
+                input {
+                    width: 100%;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    padding: 7px;
+                    border: 1px solid $light-grey;
+                    margin-top: 7px;
+                    max-width: fill-available;
+                    max-width: -webkit-fill-available;
+                    max-width: -moz-available;
+                }
+    
+                textarea {
+                    width: 100%;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    padding: 7px;
+                    border: 1px solid $light-grey;
+                    margin-top: 7px;
+                    max-width: fill-available;
+                    max-width: -webkit-fill-available;
+                    max-width: -moz-available;
+                }
+    
+                #upload_attachment {
+                    display: none;
+                }
+
+                .upload_attachment {
+                    border: 1px solid $light-grey;
+                    border-radius: 5px;
+                    padding: 5px 5px 5px 7px;
+
+                    p span{
+                        font-size: 16px;
+                        opacity: 0.8;
+                    }
+
+                    button {
+                        background-color: $light-grey;
+                        font-size: 16px;
+                    }
+                    
+                }
+
+                .pub-time__radio_group {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 7px 0;
+                    width: 100%;
+    
+                    .pub-time__radio_btn {
+                        border: 1px solid $light-grey;
+                        padding: 7px;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        width: 100%;
+                    }
+    
+                    .pub-time__radio_btn:not(:last-child) {
+                        margin-right: 30px;
+                    }
+                }
+                
+                
+            }
+
+            .press-release__payment_btn {
+                background-color: $orange;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .press-release-support {
+                padding: 60px 0;
+
+                h3 {
+                    font-size: 25px;
+                    font-family: $primary--font;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+    
+                p {
+                    font-size: 13px;
+                    margin-bottom: 30px;
+                    line-height: 26px;
+                }
+
+                button {
+                    font-size: 16px;
+                    border: 1px solid $black;
+                    width: 150px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 }

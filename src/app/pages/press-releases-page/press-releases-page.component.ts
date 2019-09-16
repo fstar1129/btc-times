@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PressReleasesPageComponent implements OnInit {
 
+  fileName: string = '';
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  onFileChange (event: any) {
+    let files = event.target.files;
+    this.fileName = files[0].name;
+    console.log(this.fileName);
+  }
 }

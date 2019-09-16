@@ -2,14 +2,81 @@
 @import "../../../shared/styles/colors";
 
 :host(app-press-release-plan) {
-    margin: 20px;
-    padding: 20px;
-
-    p span {
-        text-transform: uppercase;
-        font-size: 12px;
+    
+    .pro-plan {
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0px 11px 20px #cccccc;
+        border-radius: 5px;
+        border: 2px solid $orange;
     }
 
-    img {
+    .non-pro-plan {
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0px 11px 20px #cccccc;
+        border-radius: 5px;
     }
+    
+
+    .buy-plan {
+        border-bottom: 2px solid $light-grey;
+
+        p {
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-family: $primary--font;
+            font-weight: 600;
+        }
+        
+        .basic-buy__btn  {
+            border: 1px solid $orange;
+            font-size: 16px;
+            font-weight: 600;
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+
+        .pro-buy__btn  {
+            background-color: $orange;
+            font-size: 16px;
+            font-weight: 600;
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+
+        .vip-buy__btn  {
+            background-color: $black;
+            color: $orange;
+            font-size: 16px;
+            font-weight: 600;
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .plan-privilege {
+        padding-top: 20px;
+        height: 200px;
+
+        p {
+            margin-bottom: 10px !important;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        .plan-privilege__content {
+            padding-left: 10px;
+        }
+    }
+    
 }
