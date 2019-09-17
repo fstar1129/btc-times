@@ -6,6 +6,7 @@
     h1 {
         font-size: 34px;
         font-family: $primary--font;
+        font-weight: 600;
     }
 
     p {
@@ -23,9 +24,10 @@
         max-width: -webkit-fill-available;
         max-width: -moz-available;
     }
-    .side__sbumit__btn {
+    .side--sbumit__btn {
         width: 100%;
         background-color: $orange;
         font-size: 16px;
+        font-weight: 600;
     }
 }

@@ -1,5 +1,4 @@
 @import "../../styles/mixins";
-@import "../../styles/fonts";
 
 footer {
   padding: calculateRem(48px) calculateRem(16px);
@@ -27,29 +26,34 @@ footer {
   }
 
   .copyright-text {
-    padding: calculateRem(12px) 0;
+    padding: calculateRem(5px) 0;
     span {
       font-size: calculateRem(11px);
+      padding-bottom: 10px;
     }
     a {
       color: white;
       text-decoration: none;
-      font-size: calculateRem(12px);
+      font-size: calculateRem(10px);
     }
   }
 
+  .pb--20 {
+    padding-bottom: 20px;
+  }
+
   .footer-links {
-    padding: calculateRem(16px) 0;
+    padding: 17px 0 20px 0;
     font-size: calculateRem(16px);
     text-transform: uppercase;
     
   }
   .footer-sub-links {
-    padding: calculateRem(16px) 0;
+    padding: calculateRem(10px) 0;
     a {
       color: white;
       text-decoration: none;
-      font-size: calculateRem(14px);
+      font-size: calculateRem(13px);
     }
   }
   .social-links {

@@ -1,4 +1,6 @@
 import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+
 import {SharedModule} from '../../shared/shared.module';
 
 import { FeaturedCardComponent } from './featured-card/featured-card.component';
@@ -9,7 +11,10 @@ import { PressReleasesComponent } from './press-releases/press-releases.componen
 
 
 @NgModule({
-    imports: [SharedModule],
+    imports: [
+        SharedModule,
+        RouterModule
+    ],
     declarations: [
         FeaturedCardComponent,
         MainNewsletterComponent,

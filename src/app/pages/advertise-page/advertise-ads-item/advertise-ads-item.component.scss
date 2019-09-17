@@ -1,15 +1,15 @@
-@import "../../../shared/styles/fonts";
-@import "../../../shared/styles/colors";
+@import "../../../shared/styles/mixins";
 
 :host(app-advertise-ads-item) {
     .advertise-ads-item {
         background-color: $white;
-        padding: 40px 30px;
+        padding: 50px 30px;
         margin: 20px;
 
         h1 {
             font-size: 26px;
             font-family: $primary--font;
+            font-weight: 600;
             margin-top: 10px;
         }
     
@@ -22,6 +22,7 @@
     
         button {
             font-size: 16px;
+            font-weight: 600;
             background-color: $orange;
             width: 60%;
         }

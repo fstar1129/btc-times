@@ -14,26 +14,16 @@
           <a class="btc-pro-link" routerLink="/">
             +4.72%
           </a>
-          <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+          <button mat-button fxHide="false" fxHide.gt-sm>
             <mat-icon>menu</mat-icon>
           </button>
       </div>
       
       <div fxFlex class="text--right" fxShow="false" fxShow.gt-sm>
-        <button aria-label="news" mat-flat-button [matMenuTriggerFor]="matmenu">
+        <button aria-label="news" mat-flat-button routerLink="/blog">
           News<mat-icon class="icon__arrow-drop-down--white">arrow_drop_down</mat-icon>
         </button>
-        <mat-menu #matmenu="matMenu">
-          <div mat-menu-item *ngFor="let lang of languages">
-            <a class="language-link"
-               href="{{(lang.name === 'en') ? currentUrl : '/' + lang.name + currentUrl}}"
-               (click)="changeLanguage(lang.name)">
-              <mat-icon>flag</mat-icon>
-              <span>{{lang.label}}</span>
-            </a>
-          </div>
-        </mat-menu>
-        <button aria-label="prices" mat-flat-button routerLink="blog">
+        <button aria-label="prices" mat-flat-button>
           Prices
         </button>
         <button aria-label="" mat-flat-button routerLink="/">
@@ -51,18 +41,10 @@
         
       </div>
       <div fxFlex="none">
-        <button aria-label="" class="subscribe-btn" mat-stroked-button [matMenuTriggerFor]="matmenu">
+        <button aria-label="" class="subscribe-btn" mat-stroked-button>
           Subscribe
         </button>
       </div>
-      <mat-menu x-position="before" #menu="matMenu">
-          <button mat-menu-item routerLink="/" [matMenuTriggerFor]="matmenu">News</button>
-          <button mat-menu-item routerLink="/">Prices</button>
-          <button mat-menu-item routerLink="/">Explorer</button>
-          <button mat-menu-item routerLink="/">Faucet</button>
-          <button mat-menu-item routerLink="/">Advertise</button>
-          <button mat-menu-item routerLink="/">Press Releases</button>
-      </mat-menu>
       <app-search-bar></app-search-bar>
     </div>
   </nav>

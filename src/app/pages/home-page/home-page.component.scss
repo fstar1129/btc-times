@@ -19,7 +19,7 @@ mat-card-title, mat-card-subtitle, .mat-card-image {
     overflow-y: scroll;
   }
   .mini-view::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
     height: 13px;
   }
   
@@ -43,8 +43,10 @@ mat-card-title, mat-card-subtitle, .mat-card-image {
     background: #979698; 
   }
 
-  .btn--w250 {
+  .show-less__btn {
     width: 250px;
     border: 1px solid #808080;
+    font-size: 13px;
+    font-weight: 600;
   }
 }

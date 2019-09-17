@@ -6,10 +6,12 @@
     background-image: url("/assets/images/or-tri.png");
     background-repeat: no-repeat;
     background-color: $grey;
-    padding: 0 40px;
+    padding: 0 77px;
     h1 {
         font-size: 50px;
         font-family: $primary--font;
+        font-weight: 600;
+        margin-bottom: 10px;
     }
 
     h2 { 
@@ -37,7 +39,10 @@
 
     p {
         font-size: 18px;
+        font-family: $primary--font;
+        font-weight: 600;
         line-height: 1.7rem;
+        text-align: justify;
     }
 
     button {

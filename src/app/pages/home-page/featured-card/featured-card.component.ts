@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-featured-card',
@@ -8,9 +9,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class FeaturedCardComponent implements OnInit {
 
   @Input() card;
-  constructor() { }
+  
+  constructor(
+    private route: Router,
+  ) { 
+    
+  }
 
   ngOnInit() {
   }
-
 }
