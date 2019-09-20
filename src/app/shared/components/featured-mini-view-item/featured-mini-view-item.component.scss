@@ -1,26 +1,36 @@
 @import '../../../shared/styles/mixins';
 @import '../../../shared/styles/fonts';
 
-.mini-view-item {
+:host(app-featured-mini-view-item) {
     
-    h3.mini-view-item__title {
-        font-size: 26px;
-        font-family: $primary--font;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin: 0 0 20px 0;
-    }
-    p.mini-view-item__headline {
-        font-size: calculateRem(15px);
-        margin-bottom: 20px;
-        line-height: calculateRem(24px);       
-    }
-    p.mini-view-item__author {
-        font-size: calculateRem(13px);
-        margin-bottom: 20px;
-    }
-    p.mini-view-item__author a {
-        text-decoration: none;
-        color: black;
+    .mini-view-item {
+        padding-right: 20px;
+        
+        h3.mini-view-item__title {
+            font-size: 26px;
+            font-family: $primary--font;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 0 0 20px 0;
+        }
+        p.mini-view-item__headline {
+            font-size: calculateRem(15px);
+            margin-bottom: 20px;
+            line-height: calculateRem(24px);
+            height: 72px;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+
+        p.mini-view-item__author {
+            font-size: calculateRem(13px);
+            margin-bottom: 20px;
+        }
+
+        p.mini-view-item__author a {
+            text-decoration: none;
+            color: black;
+        }
     }
 }
+

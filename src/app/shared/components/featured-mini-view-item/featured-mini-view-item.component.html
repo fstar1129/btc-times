@@ -1,5 +1,6 @@
-<div class="mini-view-item">
-    <h3 class="mini-view-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h3>
-    <p class="mini-view-item__headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ...</p>
-    <p class="mini-view-item__author"><span><a routerLink="/">John Smith</a></span> &nbsp;&nbsp;|&nbsp;&nbsp;<span>Aug 26, 2019 at 17:30</span></p>
+<div class="mini-view-item" *ngIf="item !== undefined">
+    <h3 class="mini-view-item__title">{{ item.title }}</h3> 
+    <p class="mini-view-item__headline">{{ content }}</p>
+    <p class="mini-view-item__author" *ngIf="item.editor !== null"><span><a routerLink="/">{{ item.editor.fullname }}</a></span> &nbsp;&nbsp;|&nbsp;&nbsp;<span>{{ item.updated_at | date: 'MMM d, y, H:mm:ss' }}</span></p>
 </div>
+

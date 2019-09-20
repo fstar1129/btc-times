@@ -2,16 +2,14 @@
   fxLayoutGap="20px" fxLayoutAlign="center center">
   <div fxLayout="row" fxLayoutGap="25px" class="main-board" fxLayout.sm="column" fxLayout.xs="column">
     <div fxFlex="66" fxLayout="column" fxLayoutGap="15px">
-      <app-featured-card [card]="featuredCard"></app-featured-card>
+      <app-featured-card [card]="featuredNews"></app-featured-card>
       <app-ads [ads]="ads"></app-ads>
     </div>
     <div fxFlex="33" fxLayout="column" class="mini-view">
-      <app-featured-mini-view-item></app-featured-mini-view-item>
-      <app-featured-mini-view-item></app-featured-mini-view-item>
-      <app-featured-mini-view-item></app-featured-mini-view-item>
-      <app-featured-mini-view-item></app-featured-mini-view-item>
-      <app-featured-mini-view-item></app-featured-mini-view-item>
-      <app-featured-mini-view-item></app-featured-mini-view-item>
+      <div *ngFor="let item of featuredNewsItems">
+        <app-featured-mini-view-item [item]="item"></app-featured-mini-view-item>
+        <!-- <div>{{ item.title }}</div> -->
+      </div>
     </div>
   </div>
   <app-main-newsletter></app-main-newsletter>
@@ -25,6 +23,6 @@
       <app-ads [ads]="sideAds"></app-ads>
     </div>
   </div>
-  <button mat-stroked-button class="show-less__btn">SHOW LESS</button>
+  <button mat-stroked-button class="show-less__btn">SHOW MORE</button>
 </div>
   
