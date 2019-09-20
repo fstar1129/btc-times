@@ -1,6 +1,6 @@
-<div fxFlex class="post-card--mt20">
+<div fxFlex class="post-card--mt20" *ngIf="latestNews !== undefined">
     <a routerLink="/">
-        <img src="https://static.coindesk.com/wp-content/uploads/2019/09/43340625971_d6d7d46688_k-860x430.jpg" class="post-img"/>
+        <img src="{{latestNews.thumbnail.url}}" class="post-img"/>
     </a>
-    <app-featured-mini-view-item></app-featured-mini-view-item>
+    <app-featured-mini-view-item [item]="latestNews"></app-featured-mini-view-item>
 </div>

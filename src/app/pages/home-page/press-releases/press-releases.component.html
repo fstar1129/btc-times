@@ -1,13 +1,7 @@
 <h1>Press Releases</h1>
 <hr/>
-<div fxLayout="column" class="press-releases-section">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+<div fxLayout="column" class="press-releases-section" *ngIf="pressReleases !== undefined">
+    <p *ngFor="let release of pressReleases">{{ release.title }}</p>
     <div class="press-more">
         <a>More ></a>
     </div>

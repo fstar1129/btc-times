@@ -1,23 +1,8 @@
 
 <h1>Latest</h1>
 <hr/>
-<div fxLayout="row wrap">
-    <div fxFlex="1 0 47" class="flex--mr30">
-        <app-post-card></app-post-card>
-    </div>
-    <div fxFlex="1 0 47" class="flex--mr30">
-        <app-post-card></app-post-card>
-    </div>
-    <div fxFlex="1 0 47" class="flex--mr30">
-        <app-post-card></app-post-card>
-    </div>
-    <div fxFlex="1 0 47" class="flex--mr30">
-        <app-post-card></app-post-card>
-    </div>
-    <div fxFlex="1 0 47" class="flex--mr30">
-        <app-post-card></app-post-card>
-    </div>
-    <div fxFlex="1 0 47" class="flex--mr30">
-        <app-post-card></app-post-card>
+<div fxLayout="row wrap" *ngIf="latestNews !== undefined">
+    <div fxFlex="1 0 47" class="flex--mr30" *ngFor="let item of latestNews">
+        <app-post-card [latestNews]="item"></app-post-card>
     </div>
 </div>

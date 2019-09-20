@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NewsService } from '../../../shared/services/news.service';
 
 @Component({
   selector: 'app-press-releases',
@@ -7,9 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PressReleasesComponent implements OnInit {
 
-  constructor() { }
+  pressReleases: any;
+  constructor(private newsService: NewsService) { }
 
   ngOnInit() {
+    this.getPressReleases();
   }
 
+  getPressReleases() {
+    this.newsService.getPressReleases()
+      .subscribe(data => {
+        this.pressReleases = data;
+    });
+  }
 }

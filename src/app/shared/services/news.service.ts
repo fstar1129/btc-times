@@ -31,16 +31,18 @@ export class NewsService {
   }
 
   getLatestNews(): Observable<[Object]> {
-    const params = new HttpParams()
-      .set('featured', 'false')
-      .set('_limit', '9');
+    // const params = new HttpParams()
+    //   .set('_limit', '100');
     
-    return this.apiService.get('news', params)
+    return this.apiService.get('news')
       .pipe();
   }
 
   getPressReleases(): Observable<[Object]> {
-    return this.apiService.get('pressreleases')
+    const params = new HttpParams()
+      .set('_limit', '7');
+
+    return this.apiService.get('pressreleases', params)
       .pipe();
   }
 }
