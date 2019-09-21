@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { News } from '../../interfaces/news.model';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-featured-mini-view-item',
@@ -11,7 +11,7 @@ export class FeaturedMiniViewItemComponent implements OnInit {
   @Input() item: any;
   content: string;
   data: any;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     if (this.item !== undefined) {

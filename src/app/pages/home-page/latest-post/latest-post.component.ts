@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChange, SimpleChanges } from '@angular/core';
 import { NewsService } from '../../../shared/services/news.service';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-latest-post',
@@ -14,7 +15,10 @@ export class LatestPostComponent implements OnInit {
   showLoadMore: boolean = true;
   rowPerPage = 6;
 
-  constructor(private newsService: NewsService) { }
+  constructor(
+    private newsService: NewsService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.getLatestNews();

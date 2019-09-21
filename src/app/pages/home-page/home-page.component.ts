@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { NewsService } from '../../shared/services/news.service';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home-page',
@@ -16,7 +17,10 @@ export class HomePageComponent implements OnInit {
   ads: any;
   sideAds: any;
   data: any;
-  constructor(private newsService: NewsService) {
+  constructor(
+    private newsService: NewsService, 
+    private router: Router
+  ) {
   }
 
   ngOnInit() {
