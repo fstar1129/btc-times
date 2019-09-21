@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChange, SimpleChanges } from '@angular/core';
 import { NewsService } from '../../../shared/services/news.service';
 
 @Component({
@@ -8,12 +8,28 @@ import { NewsService } from '../../../shared/services/news.service';
 })
 export class LatestPostComponent implements OnInit {
 
+  @Input() page: number;
+  @Output() getShowMoreBtnStatus = new EventEmitter();
   latestNews: any;
+  showLoadMore: boolean = true;
+  rowPerPage = 6;
 
   constructor(private newsService: NewsService) { }
 
   ngOnInit() {
     this.getLatestNews();
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    const page: SimpleChange = changes.page;
+    if (page.isFirstChange()) {
+      console.log("its first change!")
+      
+    } else {
+      this.showLoadMore = (page.currentValue + 1) * this.rowPerPage >= this.latestNews.length ? false : true;
+      console.log(this.showLoadMore);
+      this.getShowMoreBtnStatus.emit(this.showLoadMore);
+    }
   }
 
   getLatestNews() {

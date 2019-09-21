@@ -11,6 +11,8 @@ export class HomePageComponent implements OnInit {
   featuredNewsItems: [];
   featuredNews: any;
   pressReleases: any;
+  pageNumber = 0;
+  showShowMoreBtn = true;
   ads: any;
   sideAds: any;
   data: any;
@@ -36,9 +38,13 @@ export class HomePageComponent implements OnInit {
 
 
   showMoreNews() {
-
+    this.pageNumber ++;
   }
 
+
+  setShowMoreBtnStatus(showLoadMore) {
+    this.showShowMoreBtn = showLoadMore;
+  }
   // formatNews(data: any) {
   //   let formatedData: [];
 

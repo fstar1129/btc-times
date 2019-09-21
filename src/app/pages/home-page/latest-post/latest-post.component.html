@@ -2,7 +2,7 @@
 <h1>Latest</h1>
 <hr/>
 <div fxLayout="row wrap" *ngIf="latestNews !== undefined">
-    <div fxFlex="1 0 47" class="flex--mr30" *ngFor="let item of latestNews">
+    <div fxFlex="1 0 47" class="flex--mr30" *ngFor="let item of latestNews | slice:0:( (page + 1) * rowPerPage)">
         <app-post-card [latestNews]="item"></app-post-card>
     </div>
 </div>
