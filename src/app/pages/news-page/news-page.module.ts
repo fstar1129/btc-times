@@ -1,4 +1,5 @@
 import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
 import {SharedModule} from '../../shared/shared.module';
 
 import { NewsComponent } from './news/news.component';
@@ -10,7 +11,10 @@ import { RelatedNewsComponent } from './related-news/related-news.component';
 
 
 @NgModule({
-    imports: [SharedModule],
+    imports: [
+        RouterModule,
+        SharedModule
+    ],
     declarations: [
         NewsComponent,
         CategoriesComponent,
@@ -29,6 +33,6 @@ import { RelatedNewsComponent } from './related-news/related-news.component';
     ]
 })
 
-export class BlogPageModule {
+export class NewsPageModule {
     
 }

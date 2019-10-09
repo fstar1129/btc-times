@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
       this.isOnline = true;
     }
 
-    if (this.location.path() === "/blog") {
+    if (this.location.path() === "/news") {
       this.isPostPage = true;
     }
 

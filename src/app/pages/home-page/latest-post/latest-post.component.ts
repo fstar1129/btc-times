@@ -9,8 +9,7 @@ import {Router} from "@angular/router";
 })
 export class LatestPostComponent implements OnInit {
 
-  @Input() page: number;
-  @Output() getShowMoreBtnStatus = new EventEmitter();
+  page = 0;
   latestNews: any;
   showLoadMore: boolean = true;
   rowPerPage = 6;
@@ -24,16 +23,9 @@ export class LatestPostComponent implements OnInit {
     this.getLatestNews();
   }
 
-  ngOnChanges(changes: SimpleChanges) {
-    const page: SimpleChange = changes.page;
-    if (page.isFirstChange()) {
-      console.log("its first change!")
-      
-    } else {
-      this.showLoadMore = (page.currentValue + 1) * this.rowPerPage >= this.latestNews.length ? false : true;
-      console.log(this.showLoadMore);
-      this.getShowMoreBtnStatus.emit(this.showLoadMore);
-    }
+  showMoreNews() {
+    this.page ++;
+    this.showLoadMore = (this.page + 1) * this.rowPerPage >= this.latestNews.length ? false : true;
   }
 
   getLatestNews() {

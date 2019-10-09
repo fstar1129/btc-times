@@ -5,7 +5,7 @@ import {AppComponent} from './app.component';
 import {APP_CONFIG, AppConfig} from './configs/app.config';
 import {SharedModule} from './shared/shared.module';
 import {HomePageModule} from './pages/home-page/home-page.module';
-import {BlogPageModule} from './pages/blog-page/blog-page.module';
+import {NewsPageModule} from './pages/news-page/news-page.module';
 import {AdvertisePageModule} from './pages/advertise-page/advertise-page.module';
 import {PressReleasesPageModule} from './pages/press-releases-page/press-releases-page.module';
 
@@ -26,7 +26,7 @@ import {ENDPOINTS_CONFIG, EndpointsConfig} from './configs/endpoints.config';
 import {LazyLoadImageModule} from 'ng-lazyload-image';
 import {RouterModule} from '@angular/router';
 import {PrebootModule} from 'preboot';
-import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { NewsPageComponent } from './pages/news-page/news-page.component';
 import { AdvertisePageComponent } from './pages/advertise-page/advertise-page.component';
 import { PressReleasesPageComponent } from './pages/press-releases-page/press-releases-page.component';
 
@@ -70,7 +70,7 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
     CoreModule,
     SharedModule,
     HomePageModule,
-    BlogPageModule,
+    NewsPageModule,
     AdvertisePageModule,
     PressReleasesPageModule,
   ],
@@ -78,7 +78,7 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
     HomePageComponent,
     Error404PageComponent,
     AppComponent,
-    BlogPageComponent,
+    NewsPageComponent,
     AdvertisePageComponent,
     PressReleasesPageComponent
   ],

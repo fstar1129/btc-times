@@ -45,4 +45,8 @@ export class NewsService {
     return this.apiService.get('pressreleases', params)
       .pipe();
   }
+
+  getPopularTags(): Observable<[Object]> {
+    return this.apiService.get('tags/popular').pipe();
+  }
 }

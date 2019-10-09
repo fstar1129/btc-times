@@ -2,17 +2,17 @@
   fxLayoutGap="20px" fxLayoutAlign="center center">
   <div fxLayout="row" fxLayoutGap="25px" class="main-board" fxLayout.sm="column" fxLayout.xs="column">
     <div fxFlex="66" fxLayout="column" fxLayoutGap="15px">
-      <app-featured-card routerLink="blog"></app-featured-card>
+      <app-featured-card routerLink="news"></app-featured-card>
       <app-ads [ads]="ads"></app-ads>
     </div>
     <div fxFlex="33" fxLayout="column" class="mini-view">
-      <app-featured-mini-view-item *ngFor="let item of featuredNewsItems" [item]="item" routerLink="blog"></app-featured-mini-view-item>
+      <app-featured-mini-view-item *ngFor="let item of featuredNewsItems" [item]="item" routerLink="news"></app-featured-mini-view-item>
     </div>
   </div>
   <app-main-newsletter></app-main-newsletter>
   <div fxLayout="row" fxLayoutGap="30px">
     <div fxFlex="70">
-      <app-latest-post [page]="pageNumber" (getShowMoreBtnStatus)="setShowMoreBtnStatus($event)"></app-latest-post>
+      <app-latest-post #latestPost></app-latest-post>
     </div>
     <div fxFlex="30" fxLayoutGap="60px" fxLayout="column">
       <app-story-tips></app-story-tips>
@@ -20,5 +20,5 @@
       <app-ads [ads]="sideAds"></app-ads>
     </div>
   </div>
-  <button mat-stroked-button class="show-less__btn" (click)="showMoreNews()" *ngIf="showShowMoreBtn">SHOW MORE</button>
+  <button mat-stroked-button class="show-less__btn" (click)="latestPost.showMoreNews()" *ngIf="latestPost.showLoadMore">SHOW MORE</button>
 </div>

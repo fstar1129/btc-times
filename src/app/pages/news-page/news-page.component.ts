@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-blog-page',
-  templateUrl: './blog-page.component.html',
-  styleUrls: ['./blog-page.component.scss']
+  selector: 'app-news-page',
+  templateUrl: './news-page.component.html',
+  styleUrls: ['./news-page.component.scss']
 })
-export class BlogPageComponent implements OnInit {
+export class NewsPageComponent implements OnInit {
 
   sideAds: any;
   constructor() { }

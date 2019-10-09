@@ -26,5 +26,4 @@ export class FeaturedMiniViewItemComponent implements OnInit {
       return text;
     }
   }
-
 }
