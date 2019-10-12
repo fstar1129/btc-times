@@ -2,32 +2,35 @@
 @import "../../../shared/styles/colors";
 
 :host(app-advertise-promo-form) {
-    width: 100%;
-    h1 {
-        font-size: 34px;
-        font-family: $primary--font;
-        font-weight: 600;
-    }
+    .advertise-promo-form {
+        margin: 40px auto;
 
-    p {
-        font-size: 14px;
-    }
-
-    input {
-        width: 100%;
-        border-radius: 5px;
-        font-size: 16px;
-        padding: 7px;
-        border: 1px solid $light-grey;
-        margin-top: 7px;
-        max-width: fill-available;
-        max-width: -webkit-fill-available;
-        max-width: -moz-available;
-    }
-    .side--sbumit__btn {
-        width: 100%;
-        background-color: $orange;
-        font-size: 16px;
-        font-weight: 600;
+        h1 {
+            font-size: 34px;
+            font-family: $primary--font;
+            font-weight: 600;
+        }
+    
+        p {
+            font-size: 14px;
+        }
+    
+        input {
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 7px;
+            border: 1px solid $light-grey;
+            margin-top: 7px;
+            max-width: fill-available;
+            max-width: -webkit-fill-available;
+            max-width: -moz-available;
+        }
+        .side--sbumit__btn {
+            width: 100%;
+            background-color: $orange;
+            font-size: 16px;
+            font-weight: 600;
+        }
     }
 }

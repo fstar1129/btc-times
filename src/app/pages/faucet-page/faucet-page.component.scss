@@ -1,0 +1,77 @@
+@import "../../shared/styles/mixins";
+
+:host(app-faucet-page) {
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    max-height: 100% !important;
+    margin-top: 15px;
+
+    .faucet-title {
+        margin: auto;
+        width: 1140px;
+        font-size: 40px;
+        font-family: $primary--font;
+        font-weight: bold;
+    }
+
+    .faucet-page {
+        margin: 0 auto 80px auto;
+        width: 1140px;
+        flex-shrink: 1;
+        max-height: 100% !important;
+        
+
+        &__section {
+            padding: 40px 0;
+        }
+        
+        &__section-title {
+            font-family: $primary--font;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        &__section-content {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        hr {
+            border: 1px solid #fed265;
+            width: 100%;
+        }
+
+        .bit-address__label {
+            font-size: 13px;
+            color: $dim-grey
+        }
+
+        input {
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 7px;
+            border: 1px solid $light-grey;
+            margin-top: 7px;
+            max-width: fill-available;
+            max-width: -webkit-fill-available;
+            max-width: -moz-available;
+        }
+
+        .bit-our-address__title {
+            margin-top:20px;
+            font-size: 25px;
+        }
+
+        .bit-our-address {
+            margin-top:25px;
+            font-size: 16px;
+        }
+    }
+    
+    .faucet-page__section-right {
+        border-left: 1px solid $light-grey;
+        padding-left: 40px;
+    }
+}

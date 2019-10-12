@@ -5,6 +5,7 @@ import {HomePageComponent} from './pages/home-page/home-page.component';
 import {NewsPageComponent} from './pages/news-page/news-page.component';
 import {AdvertisePageComponent} from './pages/advertise-page/advertise-page.component';
 import {PressReleasesPageComponent} from './pages/press-releases-page/press-releases-page.component';
+import {FaucetPageComponent} from './pages/faucet-page/faucet-page.component';
 import {RoutesConfig} from './configs/routes.config';
 
 const routesNames = RoutesConfig.routesNames;
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: routesNames.news, component: NewsPageComponent, pathMatch: 'full'},
   {path: routesNames.advertise, component: AdvertisePageComponent, pathMatch: 'full'},
   {path: routesNames.press_release_submission, component: PressReleasesPageComponent, pathMatch: 'full'},
+  {path: routesNames.faucet, component: FaucetPageComponent, pathMatch: 'full'},
   {path: routesNames.error404, component: Error404PageComponent},
   {path: 'en', redirectTo: ''}, // because english language is the default one
 

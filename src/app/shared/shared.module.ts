@@ -16,6 +16,7 @@ import {LazyLoadImageModule} from 'ng-lazyload-image';
 import { AdsComponent } from './components/ads/ads.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { FeaturedMiniViewItemComponent } from './components/featured-mini-view-item/featured-mini-view-item.component';
+import { SubscriptionComponent } from './components/subscription/subscription.component';
 
 @NgModule({
   imports: [
@@ -38,6 +39,7 @@ import { FeaturedMiniViewItemComponent } from './components/featured-mini-view-i
     AdsComponent,
     PostCardComponent,
     FeaturedMiniViewItemComponent,
+    SubscriptionComponent,
   ],
   exports: [
     CommonModule,
@@ -55,6 +57,7 @@ import { FeaturedMiniViewItemComponent } from './components/featured-mini-view-i
     AdsComponent,
     PostCardComponent,
     FeaturedMiniViewItemComponent,
+    SubscriptionComponent
   ]
 })
 
