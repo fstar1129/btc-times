@@ -9,6 +9,7 @@ import {NewsPageModule} from './pages/news-page/news-page.module';
 import {AdvertisePageModule} from './pages/advertise-page/advertise-page.module';
 import {PressReleasesPageModule} from './pages/press-releases-page/press-releases-page.module';
 import {FaucetPageModule} from './pages/faucet-page/faucet-page.module';
+import {ContactUsPageModule} from './pages/contact-us-page/contact-us-page.module';
 
 import {NgxExampleLibraryModule} from '@ismaestro/ngx-example-library';
 import {SentryErrorHandler} from './modules/core/sentry.errorhandler';
@@ -75,6 +76,7 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
     AdvertisePageModule,
     PressReleasesPageModule,
     FaucetPageModule,
+    ContactUsPageModule,
   ],
   declarations: [
     HomePageComponent,

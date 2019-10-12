@@ -1,0 +1,83 @@
+@import "../../../shared/styles/mixins";
+
+:host(app-contact-us-main) {
+    .contact-us-main {
+        margin: 120px auto;
+
+        &-section {
+            border: 1px solid $light-grey;
+            padding: 40px;
+
+            h1 {
+                font-size: 32px;
+                font-weight: bold;
+                font-family: $primary--font;
+            }
+
+            &__form-label {
+                font-size: 13px;
+                color: $dim-grey
+            }
+
+            input {
+                width: 100%;
+                border-radius: 5px;
+                font-size: 16px;
+                padding: 7px;
+                border: 1px solid $light-grey;
+                margin-top: 7px;
+                max-width: fill-available;
+                max-width: -webkit-fill-available;
+                max-width: -moz-available;
+            }
+
+            &__form-submit {
+                border-radius: 5px;
+                font-size: 16px;
+                padding: 0px 25px;
+                border: 1px solid $light-grey;
+                max-width: fill-available;
+                max-width: -webkit-fill-available;
+                max-width: -moz-available;
+                min-width: auto;
+                background-color: $orange;
+            }
+
+            &__info {
+                color: $dim-grey;
+
+                i {
+                    font-size: 20px;
+                    margin-right: 25px;
+                }
+            }
+
+            &__social-text {
+                font-family: $primary--font;
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            &__social-link {
+                i {
+                    font-size: 27px;
+                    padding: 0px 10px;
+                    color: $dim-grey;
+                }
+
+                .fa-facebook-square {
+                    color: $black;
+                    padding-left: 0;
+                }
+
+                .fa-twitter {
+                    color: $black;
+                }
+            }
+        }
+
+        .mxh-85 {
+            max-height: 85%;
+        }
+    }
+}

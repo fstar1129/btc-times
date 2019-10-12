@@ -1,0 +1,22 @@
+@import "../../shared/styles/mixins";
+
+:host(app-contact-us-header) {
+    background-color: $dark-grey;
+
+    .contact-us-header {
+        margin: 120px auto;
+
+        h1 {
+            font-size: 40px;
+            font-family: $primary--font;
+            font-weight: 600;
+            color: $white;
+        }
+
+        p {
+            font-size: 15px;
+            color: $white;
+            line-height: 24px;
+        }
+    }
+}
