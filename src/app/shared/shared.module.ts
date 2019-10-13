@@ -57,7 +57,7 @@ import { SubscriptionComponent } from './components/subscription/subscription.co
     AdsComponent,
     PostCardComponent,
     FeaturedMiniViewItemComponent,
-    SubscriptionComponent
+    SubscriptionComponent,
   ]
 })
 

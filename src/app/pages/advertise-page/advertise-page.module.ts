@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {SharedModule} from '../../shared/shared.module';
 
+import { AdvertisePageComponent } from './advertise-page.component';
 import { AdvertisePromoComponent } from './advertise-promo/advertise-promo.component';
 import { AdvertisePromoFormComponent } from './advertise-promo-form/advertise-promo-form.component';
 import { AdvertiseAdsComponent } from './advertise-ads/advertise-ads.component';
@@ -14,6 +15,7 @@ import { AdvertiseFormatsItemComponent } from './advertise-formats-item/advertis
 @NgModule({
     imports: [SharedModule],
     declarations: [
+        AdvertisePageComponent,
         AdvertisePromoComponent,
         AdvertisePromoFormComponent,
         AdvertiseAdsComponent,
@@ -23,16 +25,6 @@ import { AdvertiseFormatsItemComponent } from './advertise-formats-item/advertis
         AdvertiseFormatsComponent,
         AdvertiseFormatsItemComponent,
     ],
-    exports: [
-        AdvertisePromoComponent,
-        AdvertisePromoFormComponent,
-        AdvertiseAdsComponent,
-        AdvertiseAdsItemComponent,
-        AdvertiseAdvantageComponent,
-        AdvertiseAdvantageItemComponent,
-        AdvertiseFormatsComponent,
-        AdvertiseFormatsItemComponent,
-    ]
 })
 
 export class AdvertisePageModule {

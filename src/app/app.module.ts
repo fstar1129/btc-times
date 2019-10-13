@@ -4,12 +4,6 @@ import {CoreModule} from './modules/core/core.module';
 import {AppComponent} from './app.component';
 import {APP_CONFIG, AppConfig} from './configs/app.config';
 import {SharedModule} from './shared/shared.module';
-import {HomePageModule} from './pages/home-page/home-page.module';
-import {NewsPageModule} from './pages/news-page/news-page.module';
-import {AdvertisePageModule} from './pages/advertise-page/advertise-page.module';
-import {PressReleasesPageModule} from './pages/press-releases-page/press-releases-page.module';
-import {FaucetPageModule} from './pages/faucet-page/faucet-page.module';
-import {ContactUsPageModule} from './pages/contact-us-page/contact-us-page.module';
 
 import {NgxExampleLibraryModule} from '@ismaestro/ngx-example-library';
 import {SentryErrorHandler} from './modules/core/sentry.errorhandler';
@@ -22,15 +16,11 @@ import {CookieModule} from 'ngx-cookie';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {ROUTES_CONFIG, RoutesConfig} from './configs/routes.config';
-import {HomePageComponent} from './pages/home-page/home-page.component';
 import {Error404PageComponent} from './pages/error404-page/error404-page.component';
 import {ENDPOINTS_CONFIG, EndpointsConfig} from './configs/endpoints.config';
 import {LazyLoadImageModule} from 'ng-lazyload-image';
 import {RouterModule} from '@angular/router';
 import {PrebootModule} from 'preboot';
-import { NewsPageComponent } from './pages/news-page/news-page.component';
-import { AdvertisePageComponent } from './pages/advertise-page/advertise-page.component';
-import { PressReleasesPageComponent } from './pages/press-releases-page/press-releases-page.component';
 
 declare const require;
 
@@ -71,20 +61,10 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
     LazyLoadImageModule.forRoot({}),
     CoreModule,
     SharedModule,
-    HomePageModule,
-    NewsPageModule,
-    AdvertisePageModule,
-    PressReleasesPageModule,
-    FaucetPageModule,
-    ContactUsPageModule,
   ],
   declarations: [
-    HomePageComponent,
     Error404PageComponent,
     AppComponent,
-    NewsPageComponent,
-    AdvertisePageComponent,
-    PressReleasesPageComponent
   ],
   providers: [
     {provide: APP_CONFIG, useValue: AppConfig},

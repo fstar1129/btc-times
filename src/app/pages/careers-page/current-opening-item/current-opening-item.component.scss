@@ -1,0 +1,28 @@
+@import "../../../shared/styles/mixins";
+
+:host(app-current-opening-item) {
+
+    .current-opening-item {
+        padding: 30px;
+        border: 1px solid $dim-grey;
+        border-radius: 5px;
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: $primary--font;
+        }
+
+        p {
+            font-size: 14px;
+            color: $dim-grey;
+        }
+
+        a {
+            color: $blue;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+    
+}

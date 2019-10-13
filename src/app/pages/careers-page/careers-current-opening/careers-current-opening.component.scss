@@ -1,0 +1,82 @@
+@import "../../../shared/styles/mixins";
+
+:host(app-careers-current-opening) {
+    .careers-current-opening {
+        margin: 0 auto 60px auto;
+
+        &__header {
+            h1 {
+                font-size: 40px;
+                font-family: $primary--font;
+                font-weight: bold;
+            }
+
+
+        }
+    }
+
+    .flex--mrb30 {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        max-width: 49%;
+    }
+    
+    .flex--mrb30:nth-child(even) {
+        margin-right: 0px;
+    }
+
+    .selectdiv {
+        margin-left: 20px;
+        position: relative;
+        /*Don't really need this just for demo styling*/
+        float: left;
+
+         /*To remove button from IE11, thank you Matt */
+        select::-ms-expand {
+            display: none;
+        }
+        
+        &:after {
+            content: '>';
+            font: 17px "Consolas", monospace;
+            color: #333;
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            right: 11px;
+            /*Adjust for position however you want*/
+            
+            top: 10px;
+            padding: 0 0 2px;
+            /*left line */
+            
+            position: absolute;
+            pointer-events: none;
+        }
+        
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            /* Add some styling */
+            
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            height: 30px;
+            float: right;
+            margin: 5px 0px;
+            padding: 0px 40px 0 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            background-color: #ffffff;
+            background-image: none;
+            border: 1px solid #cccccc;
+            -ms-word-break: normal;
+            word-break: normal;
+            border-radius: 5px;
+        }
+    }
+}

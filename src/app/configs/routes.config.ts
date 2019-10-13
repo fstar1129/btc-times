@@ -8,6 +8,7 @@ const routesNames = {
   advertise: 'advertise',
   press_release_submission: 'press-release-submission',
   contact_us: 'contact-us',
+  careers: 'careers',
   faucet: 'faucet',
   error404: '404',
 };
@@ -20,6 +21,7 @@ export const RoutesConfig: any = {
     advertise: `/${routesNames.advertise}`,
     press_release_submission: `/${routesNames.press_release_submission}`,
     contact_us: `/${routesNames.contact_us}`,
+    careers: `/${routesNames.careers}`,
     faucet: `/${routesNames.faucet}`,
     error404: `/${routesNames.error404}`,
   }
