@@ -1,0 +1,46 @@
+@import "../../../shared/styles/mixins";
+
+:host(app-about-us-header) {
+    background-color: $dark-grey;
+
+    .about-us-header {
+        
+        margin: 80px auto;
+
+        h1 {
+            font-size: 40px;
+            font-family: $primary--font;
+            font-weight: 600;
+            color: $white;
+        }
+
+        p {
+            font-size: 15px;
+            color: $white;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        &__btn {
+            background-color: $orange;
+            font-weight: bold;
+        }
+
+        &__metrics {
+            padding: 0 40px;
+            width: 100%;
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 14px;
+                color: $dim-grey;
+            }
+
+            .br__enable {
+                border-right: 1px solid $white;
+            }
+        }
+    }
+}

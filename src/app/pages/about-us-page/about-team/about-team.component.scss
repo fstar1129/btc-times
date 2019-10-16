@@ -1,0 +1,40 @@
+@import "../../../shared/styles/mixins";
+
+:host(app-about-team) {
+
+    background-color: $light-grey;
+
+    .about-team {
+        margin: 80px auto 50px auto;
+
+        h1 {
+            font-size: 40px;
+            font-family: $primary--font;
+            font-weight: bold;
+        }
+
+        &__tab {
+            width: 100%;
+
+            .active {
+                border-bottom: 3px solid $black;
+            }
+
+            a {
+                background-color: $light-grey;
+                border: none;
+                padding-bottom: 10px;
+            }
+        }
+
+        .flex--mrb30 {
+            margin-bottom: 30px;
+            margin-right: 30px;
+        }
+
+        .flex--mrb30:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+}

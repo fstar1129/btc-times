@@ -1,0 +1,32 @@
+@import "../../../shared/styles/mixins";
+
+:host(app-about-team-item) {
+    
+    .about-team-item {
+        border-radius: 10px;
+        img {
+            border-radius: 10px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            width: 100%;
+        }
+
+        &__content {
+
+            border-radius: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding: 30px;
+            background-color: $white;
+            h1 {
+                font-size: 28px;
+                font-family: $primary--font;
+                font-weight: bold;
+            }
+
+            p {
+                color: $dim-grey;
+            }
+        }
+    }
+}

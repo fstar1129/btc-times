@@ -1,0 +1,24 @@
+@import "../../../shared/styles/mixins";
+
+:host(app-about-us-main) {
+    .about-us-main {
+        margin: 80px auto;
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            font-family: $primary--font;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        &__btn {
+            background-color: $orange;
+            font-weight: bold;
+            width: max-content;
+        }
+    }
+}
