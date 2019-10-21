@@ -11,6 +11,7 @@ const routesNames = {
   careers: 'careers',
   faucet: 'faucet',
   about_us: 'about-us',
+  prices: 'prices',
   error404: '404',
 };
 
@@ -25,6 +26,7 @@ export const RoutesConfig: any = {
     about_us: `/${routesNames.about_us}`,
     careers: `/${routesNames.careers}`,
     faucet: `/${routesNames.faucet}`,
+    prices: `/${routesNames.prices}`,
     error404: `/${routesNames.error404}`,
   }
 };

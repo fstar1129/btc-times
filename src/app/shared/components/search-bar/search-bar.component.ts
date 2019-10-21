@@ -1,6 +1,7 @@
 import {map, startWith} from 'rxjs/operators';
 import {Component, Inject, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
+import * as $ from 'jquery';
 import {ROUTES_CONFIG} from '../../../configs/routes.config';
 
 @Component({
@@ -10,13 +11,23 @@ import {ROUTES_CONFIG} from '../../../configs/routes.config';
 })
 
 export class SearchBarComponent implements OnInit {
-
   constructor(){
 
   }
 
   ngOnInit() {
     
+  }
+
+  showSearchForm() {
+    if ($("#search-input").hasClass("js-open")) {
+      $("#search-input").removeClass("js-open");
+    } else {
+      $("#search-input").addClass("js-open");
+    }
+    $("#searchquery").val("");
+
+    setTimeout(function() { $('#searchquery').focus() }, 500);
   }
 
 }

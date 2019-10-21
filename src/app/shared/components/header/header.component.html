@@ -20,10 +20,47 @@
       </div>
       
       <div fxFlex class="text--right" fxShow="false" fxShow.gt-sm>
-        <button aria-label="news" mat-flat-button routerLink="/news">
-          News<mat-icon class="icon__arrow-drop-down--white">arrow_drop_down</mat-icon>
-        </button>
-        <button aria-label="prices" mat-flat-button>
+        <div class="news-dropdown">
+            <button aria-label="news" mat-flat-button routerLink="/news">
+              News<mat-icon class="icon__arrow-drop-down--white">arrow_drop_down</mat-icon>
+            </button>
+            <div class="news-dropdown-content" fxLayout="row wrap">
+              <div fxFlex="0 0 32" fxLayoutAlign="start">
+                  <a href="#">Blockchain</a>
+              </div>
+              <div fxFlex="0 0 32"  fxLayoutAlign="start">
+                  <a href="#">Dark Web</a>
+              </div>
+              <div fxFlex="0 0 32" fxLayoutAlign="start">
+                  <a href="#">Featured</a>
+              </div>
+              <div fxFlex="0 0 32" fxLayoutAlign="start">
+                  <a href="#">Bitcoin</a>
+              </div>
+              <div fxFlex="0 0 32" fxLayoutAlign="start">
+                  <a href="#">Mining</a>
+              </div>
+              <div fxFlex="0 0 32" fxLayoutAlign="start">
+                  <a href="#">Adoption</a>
+              </div>
+              <div fxFlex="0 0 32" fxLayoutAlign="start">
+                  <a href="#">Payments</a>
+              </div>
+              <div fxFlex="0 0 32" fxLayoutAlign="start">
+                  <a href="#">Inversting</a>
+              </div>
+              <div fxFlex="0 0 32"  fxLayoutAlign="start">
+                  <a href="#">Startup</a>
+              </div>
+              <div fxFlex="0 0 32"  fxLayoutAlign="start">
+                  <a href="#">Scams</a>
+              </div>
+              <div fxFlex="0 0 32"  fxLayoutAlign="start">
+                  <a href="#">Bitcoin</a>
+              </div>
+            </div>
+        </div>
+        <button aria-label="prices" mat-flat-button routerLink="/prices">
           Charts
         </button>
         <button aria-label="" mat-flat-button routerLink="/">

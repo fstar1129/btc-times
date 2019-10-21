@@ -1,3 +1,11 @@
-<div id="search-input">
-    <mat-icon class="icon__search">search</mat-icon>
+<div id="search-input" class="b-nav-search">
+    <mat-icon class="icon__search" (click)="showSearchForm()">search</mat-icon>
+    <div class="b-nav-search__form-wrap">
+        <form action="/search" id="search" role="search" method="get" class="b-nav-search__form js-open">
+            <div class="b-nav-search__fields">
+                <input type="text" id="searchquery" name="query" placeholder="" autocomplete="off" class="b-nav-search__input b-nav-search__input_text"> 
+                <input type="submit" value="Search" class="b-nav-search__input b-nav-search__input_submit">
+            </div>
+        </form>
+    </div>
 </div>

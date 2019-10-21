@@ -109,6 +109,43 @@
           }
         }
       }
+
+      .news-dropdown {
+        position: relative;
+        display: inline-block;
+
+        &-content {
+          display: none !important;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 500px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          border-radius: 5px;
+          padding: 20px 10px;
+          // transition: all 1s ease 0s;
+          // -webkit-transition: all 1s ease 0s;
+
+          & div {
+            padding: 7px;
+
+            a {
+              text-decoration: none;
+              color: $black;
+              text-transform: none;
+
+              &:hover {
+                color: $orange;
+              }
+            }
+          }
+        }
+
+        &:hover .news-dropdown-content {
+          display: flex !important;
+        }
+
+      }
     }
   }
 }

@@ -14,6 +14,7 @@ import {DOCUMENT, isPlatformBrowser, registerLocaleData} from '@angular/common';
 import localeEs from '@angular/common/locales/es';
 import {CookieModule} from 'ngx-cookie';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ChartModule } from 'angular-highcharts';
 
 import {ROUTES_CONFIG, RoutesConfig} from './configs/routes.config';
 import {Error404PageComponent} from './pages/error404-page/error404-page.component';
@@ -58,6 +59,7 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
         say: 'hello'
       }
     }),
+    ChartModule,
     LazyLoadImageModule.forRoot({}),
     CoreModule,
     SharedModule,

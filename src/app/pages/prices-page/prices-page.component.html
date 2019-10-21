@@ -1,0 +1,46 @@
+<div fxLayout="column" class="prices-page">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+            <img src="/assets/images/logo_btc.png">
+            <div fxLayout="column" fxLayoutGap="10px">
+                <h1>Bitcoin price <span>(BTC)</span></h1>
+                <p>DOLLAR 6,723.25</p>
+            </div>
+        </div>
+        <div class="selectdiv">
+            <label>
+                <select>
+                    <option selected>30 Days</option>
+                    <option>60 Days</option>
+                    <option>180 Days</option>
+                    <option>1 Year</option>
+                    <option>2 Years</option>
+                    <option>All Time</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <i class="fa fa-caret-down"></i><span>DOLLAR 6,72325 (-6.24%)</span>
+        </div>
+    </div>
+    <app-chart></app-chart>
+    <div fxLayout="row" class="btc-metric" fxLayoutGap="40px">
+        <div fxLayout="column" fxLayoutGap="10px">
+            <p class="btc-metric__title">Market cap</p>
+            <p class="btc-metric__value">DOLLAR 150.5B</p>
+        </div>
+        <div fxLayout="column" fxLayoutGap="10px">
+            <p class="btc-metric__title">Volumn (24 hours)</p>
+            <p class="btc-metric__value">DOLLAR 22.3B</p>
+        </div>
+        <div fxLayout="column" fxLayoutGap="10px">
+            <p class="btc-metric__title">Circulating supply</p>
+            <p class="btc-metric__value">15.3 BTC</p>
+        </div>
+        <div fxLayout="column" fxLayoutGap="10px">
+            <p class="btc-metric__title">All-time high</p>
+            <p class="btc-metric__value">DOLLAR 16,722.25</p>
+        </div>
+    </div>
+</div>
+<app-subscription></app-subscription>
