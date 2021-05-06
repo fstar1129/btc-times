@@ -68,7 +68,7 @@
     "grpc": "1.21.1",
     "hammerjs": "^2.0.8",
     "helmet": "3.18.0",
-    "highcharts": "^7.2.0",
+    "highcharts": "^9.0.0",
     "jquery": "^3.4.1",
     "ng-animate": "0.3.4",
     "ng-lazyload-image": "5.1.2",
